@@ -1,0 +1,26 @@
+{
+  "name": "agentic-product-template",
+  "owner": {
+    "name": "agentic-product-template"
+  },
+  "metadata": {
+    "description": "서비스와 스택이 바뀌어도 재사용하는 AI 제품 개발 하네스. 공통 워크플로우와 검증된 스택 프로필만 플러그인으로 배포한다."
+  },
+  "plugins": [
+    {
+      "name": "apt-core",
+      "source": "core",
+      "description": "요구사항 정리, 위험도별 위임, 벤더 분리 검증, PR, 실행 기록에 쓰는 스택 무관 워크플로우."
+    },
+    {
+      "name": "apt-nextjs-web",
+      "source": "profiles/nextjs-web",
+      "description": "Next.js, TypeScript, Tailwind, Supabase, Vitest, Playwright 프로필."
+    },
+    {
+      "name": "apt-flutter",
+      "source": "profiles/flutter",
+      "description": "iOS·Android Flutter 앱 프로필. Riverpod 3, go_router, freezed, flutter_test."
+    }
+  ]
+}

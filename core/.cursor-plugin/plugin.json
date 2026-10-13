@@ -1,0 +1,6 @@
+{
+  "name": "apt-core",
+  "version": "0.6.0",
+  "description": "자연어 요구사항에서 사람 승인 PR까지 이어지는 스택 무관 개발 워크플로우.",
+  "keywords": ["harness", "agents", "workflow", "pull-request"]
+}

@@ -1,0 +1,19 @@
+{
+  "requirement": "docs/harness/requirements/2026-10-13-example.md",
+  "profile": "nextjs-web",
+  "risk": "L2",
+  "startedAt": "2026-10-13T00:00:00Z",
+  "finishedAt": "2026-10-13T00:30:00Z",
+  "implementerVendor": "unknown",
+  "verifierVendor": "unknown",
+  "humanInterventions": 0,
+  "retries": 0,
+  "escalations": 0,
+  "firstVerifier": "pass",
+  "reviewFindings": 0,
+  "tests": [
+    { "command": "npm test", "exitCode": 0 }
+  ],
+  "outcome": "pr-opened",
+  "failureLesson": ""
+}

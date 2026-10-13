@@ -1,0 +1,14 @@
+---
+description: 위험도에 맞춰 추론 강도를 고르고 모델 슬러그는 라우팅 문서에만 둔다
+alwaysApply: true
+---
+
+# 추론 강도
+
+위험도 등급은 `apt-risk-tiers`를 따른다. 모델 슬러그는 규칙에 적지 않고 `docs/harness/model-routing.md`만 갱신한다.
+
+- L1은 low
+- L2는 standard
+- L3와 재작업 승격은 high
+
+강도를 올리면서 실패한 시도를 그대로 반복하지 않는다. 원인과 다음에 막을 방법을 실행 기록의 `failureLesson`에 적는다.

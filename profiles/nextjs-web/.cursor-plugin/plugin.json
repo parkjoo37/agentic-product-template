@@ -1,0 +1,6 @@
+{
+  "name": "apt-nextjs-web",
+  "version": "0.6.0",
+  "description": "웹 제품용 고정 스택 프로필. Next.js, TypeScript, Tailwind, Supabase, Vitest, Playwright.",
+  "keywords": ["nextjs", "supabase", "playwright"]
+}

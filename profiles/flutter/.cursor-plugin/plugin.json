@@ -1,0 +1,6 @@
+{
+  "name": "apt-flutter",
+  "version": "0.6.0",
+  "description": "iOS·Android Flutter 앱 프로필. Riverpod 3, go_router, freezed, flutter_test.",
+  "keywords": ["flutter", "riverpod", "dart"]
+}

@@ -1,0 +1,23 @@
+---
+description: iOS·Android Flutter 앱의 고정 기술 스택과 제품 소스 경로
+alwaysApply: true
+---
+
+# Flutter 앱 스택
+
+대상은 iOS·Android 앱이다. Flutter Web, Windows, macOS는 이 프로필에 없다.
+
+FVM으로 Flutter 3.47.7, Dart 3.13.5에 고정한다. 2026-10-08 stable 기준이다.
+
+- 상태: Riverpod 3. `@riverpod`와 riverpod_generator 4. `StateNotifier`, `flutter_bloc`은 추가하지 않는다
+- 라우팅: go_router 18
+- 모델: freezed 3, json_serializable 6. freezed 4는 메이저가 다르므로 결정 없이 올리지 않는다
+- HTTP: dio 5
+- 검사: flutter_lints 6, riverpod_lint 3, flutter_test, mocktail
+- 생성: build_runner
+
+제품 소스 경로는 `lib/`다. 메인 에이전트는 이 경로를 직접 수정하지 않는다.
+
+이 목록에 없는 패키지는 요구사항의 가정으로 남긴다. 유료이거나 개인정보를 다루면 설치 전에 묻는다.
+
+iOS 의존성은 Swift Package Manager를 기본으로 한다. CocoaPods를 새로 추가하지 않는다.

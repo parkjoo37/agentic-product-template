@@ -1,0 +1,17 @@
+---
+description: Flutter 앱의 분석과 테스트 명령. 구현 에이전트와 메인이 각각 실행할 범위를 나눈다
+globs: ["**/*.dart"]
+alwaysApply: false
+---
+
+# Flutter 검증
+
+로컬 명령은 `.fvmrc`가 있으면 `fvm flutter`, 없으면 `flutter`다.
+
+구현과 검증 에이전트는 바꾼 파일에 대응하는 테스트만 실행한다.
+
+`fvm flutter test test/feature/session_test.dart`
+
+메인은 모든 구현과 검증이 끝난 뒤 `apt-verify-flutter`로 전체 검증을 한 번만 실행한다.
+
+`*.freezed.dart`, `*.g.dart`는 직접 고치지 않는다. 생성 결과가 오래되면 build_runner로 다시 만든다.
